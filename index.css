@@ -1,0 +1,141 @@
+html {
+  font-size: 62.5%;
+}
+
+body,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+div,
+iframe,
+span,
+ul,
+li,
+ol,
+nav {
+  border: 0;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-family: Source Sans Pro, Arial, Helvetica, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+  body {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  font-family: Raleway, Arial, Helvetica, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  font-family: Raleway, Arial, Helvetica, Verdana, sans-serif;
+}
+
+h3 {
+  font-size: 2.11rem;
+  font-weight: 600;
+  font-family: Raleway, Arial, Helvetica, Verdana, sans-serif;
+}
+
+b {
+  font-size: 1.1em;
+  color: var(--primaryText);
+}
+
+:root {
+  --primary: hsl(166, 80%, 43%);
+  --primaryText: hsl(166, 63%, 37%);
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--primary);
+  color: white;
+}
+
+header {
+  background: var(--primary);
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+}
+
+.logo .name {
+  font-size: 2.4rem;
+  line-height: normal;
+}
+
+.logo .career {
+  font-style: italic
+}
+
+header nav a {
+  font-weight: 600;
+  color: white;
+  padding: 0 1.6rem;
+  font-size: 2rem;
+}
+
+.content {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/*
+  Home Page Styles
+*/
+
+.home .hero {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  align-items: center;
+}
+
+.home .hero_text {
+  padding-right: 4rem;
+}
+
+.home .hero_text .text {
+  padding-top: 2.4rem;
+  font-size: 2rem;
+}
+
+.home .hero_image {
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: rgba(69, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
+}
+
+/*
+  Portfolio Styles
+*/
