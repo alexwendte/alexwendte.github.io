@@ -1,3 +1,7 @@
+/*
+  Global Styles
+*/
+
 html {
   font-size: 62.5%;
 }
@@ -16,6 +20,7 @@ div,
 iframe,
 span,
 ul,
+section,
 li,
 ol,
 nav {
@@ -26,6 +31,7 @@ nav {
   text-decoration: none;
   vertical-align: baseline;
   font-family: Source Sans Pro, Arial, Helvetica, Verdana, sans-serif;
+  color: var(--black);
 }
 
 body {
@@ -61,9 +67,22 @@ b {
   color: var(--primaryText);
 }
 
+a {
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 :root {
   --primary: hsl(166, 80%, 43%);
   --primaryText: hsl(166, 63%, 37%);
+  --black: hsl(166, 4%, 13%);
+  --primaryLight: hsl(166, 61%, 78%);
+  --primaryBackground: hsl(166, 100%, 95%);
+  --primaryDark: hsl(166, 51%, 31%);
+  --primaryHeader: hsl(166, 52%, 44%)
 }
 
 ::selection {
@@ -77,23 +96,21 @@ b {
 }
 
 header {
-  background: var(--primary);
+  background: var(--primaryHeader);
   padding: 1.6rem 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
+header .logo .name {
+  font-size: 2.4rem;
+  line-height: normal;
   color: white;
 }
 
-.logo .name {
-  font-size: 2.4rem;
-  line-height: normal;
-}
-
-.logo .career {
+header .logo .career {
+  color: white;
   font-style: italic
 }
 
@@ -102,6 +119,28 @@ header nav a {
   color: white;
   padding: 0 1.6rem;
   font-size: 2rem;
+}
+
+.link {
+  color: var(--primaryText);
+}
+
+.button {
+  padding: 1.2rem 1.6rem;
+  color: white;
+  background: var(--primaryText);
+  border-radius: 5px;
+  transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  box-shadow: rgba(69, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 15px 0px, rgba(0, 0, 0, 0.07) 0px 4px 7px 0px;
+  transition: all 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
 }
 
 .content {
@@ -117,8 +156,10 @@ header nav a {
 .home .hero {
   display: flex;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .home .hero_text {
@@ -134,6 +175,55 @@ header nav a {
   height: 500px;
   border-radius: 5px;
   box-shadow: rgba(69, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
+}
+
+.portfolio_section {
+  padding: 4rem 0;
+}
+
+.portfolio_section .view_portfolio {
+  padding: 2rem 0 4rem;
+}
+
+.portfolio_section .view_portfolio .text {
+  font-size: 1.8rem;
+  padding-right: 2rem;
+}
+
+.contact {
+  background: var(--primaryBackground);
+  padding: 2rem;
+  color: var(--primaryText);
+}
+
+.contact .subheading {
+  color: var(--primaryDark);
+}
+
+.contact .text {
+  font-size: 2rem;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4.8rem;
+}
+
+.social_item {
+  display: flex;
+  align-items: center;
+  padding: .4rem 0;
+}
+
+.social_item img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.6rem;
+}
+
+.social_item a {
+  color: var(--primaryDark);
 }
 
 /*
