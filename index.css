@@ -161,14 +161,14 @@ header nav a {
 .home .hero {
   display: flex;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 4.8rem 2.4rem;
   align-items: center;
   max-width: 90rem;
   margin: 0 auto;
 }
 
 .home .hero_text {
-  padding-right: 4rem;
+  padding-right: 4.8rem;
 }
 
 .home .hero_text .text {
@@ -183,34 +183,49 @@ header nav a {
 }
 
 .portfolio_section {
-  padding: 4rem 2rem;
+  padding: 4.8rem 2.4rem;
 }
 
 .portfolio_section .inner_wrapper {
+  align-items: center;
   display: flex;
   justify-content: center;
+  padding-top: 3.2rem;
 }
 
 .portfolio_section img {
   width: 50%;
   border-radius: 5px;
   align-self: center;
-  box-shadow: rgba(69, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px;
-  margin-right: 4rem;
+  box-shadow: rgba(69, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
+  margin-right: 4.8rem;
 }
 
 .portfolio_section .view_portfolio {
-  padding: 2rem 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .portfolio_section .text {
   font-size: 1.8rem;
-  padding-right: 2rem;
+  padding-bottom: 2.4rem;
+}
+
+.about {
+  padding: 4.8rem;
+}
+
+.about .text {
+  padding-top: .8rem;
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 .contact {
   background: var(--primaryBackground);
-  padding: 2rem;
+  padding: 2.4rem;
   color: var(--primaryText);
 }
 
@@ -247,3 +262,33 @@ header nav a {
 /*
   Portfolio Styles
 */
+
+.portfolio .heading {
+  text-align: center;
+  padding-top: 2.4rem;
+}
+
+.portfolio .description {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-bottom: 2.4rem;
+}
+
+.portfolio .description a {
+  color: var(--primaryText);
+}
+
+.portfolio_gallery {
+  padding: 4.8rem 0;
+}
+
+.portfolio_heading {
+  text-align: center;
+  padding-bottom: .8rem;
+}
+
+.portfolio img {
+  width: 100%;
+  margin: 2.4rem 0;
+  box-shadow: rgba(69, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
+}
