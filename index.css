@@ -223,17 +223,17 @@ header nav a {
   margin: 0 auto;
 }
 
-.contact {
+footer {
   background: var(--primaryBackground);
   padding: 2.4rem;
   color: var(--primaryText);
 }
 
-.contact .subheading {
+footer .subheading {
   color: var(--primaryDark);
 }
 
-.contact .text {
+footer .text {
   font-size: 2rem;
 }
 
