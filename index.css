@@ -292,3 +292,46 @@ footer .text {
   margin: 2.4rem 0;
   box-shadow: rgba(69, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
 }
+
+embed {
+  width: 100%;
+}
+
+@media(max-width: 750px) {
+  .social {
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .home .hero_text {
+    padding: 0 0 2.4rem 0;
+  }
+
+  .home .hero_image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .portfolio_section .inner_wrapper {
+    flex-direction: column;
+  }
+
+  .portfolio_section img {
+    width: 100%;
+    margin: 0 0 2.4rem 0
+  }
+
+  .about {
+    padding: 3.6rem 2.4rem;
+  }
+}
